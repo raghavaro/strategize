@@ -1,3 +1,5 @@
+from src.strategize.analysis import *
+
 class Game:
 
     '''
@@ -24,3 +26,6 @@ class Game:
     N = {}
     A = {}
     u = {}'''.format(self.N, self.A, self.u)
+
+    def analyze(self):
+        return find_pareto_optimal_outcomes(self)
