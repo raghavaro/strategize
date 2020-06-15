@@ -25,4 +25,4 @@ def zero_sum():
 
 game = prisoners_dilemma()
 print(game)
-print(game.analyze())
+game.plot()

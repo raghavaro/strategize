@@ -1,4 +1,6 @@
 from src.strategize.analysis import *
+from src.strategize.plotter import *
+
 
 class Game:
 
@@ -29,3 +31,6 @@ class Game:
 
     def analyze(self):
         return find_pareto_optimal_outcomes(self)
+    
+    def plot(self):
+        plot_normal_form_game(self)
